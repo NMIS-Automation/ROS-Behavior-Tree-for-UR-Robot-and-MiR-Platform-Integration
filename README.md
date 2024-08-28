@@ -86,7 +86,7 @@ roslaunch your_package_name robot_coordination.launch
 
 ## Configuration
 
-- UR Robot IP: Set in the launch file (`robot_bt.launch`)
+- UR Robot IP: Set in the launch file (`robot_coordination.launch`)
 - Robotiq Gripper IP and Port: Set in the launch file
 - MiR Platform: Ensure the correct ROS topics are set in `mir_platform_node.py`
 - Robot positions: Defined in `behavior_tree_node.py`
