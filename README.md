@@ -81,7 +81,7 @@ The behavior tree is structured as follows:
 To run the behavior tree:
 
 ```
-roslaunch your_package_name robot_coordination.launch.launch
+roslaunch your_package_name robot_coordination.launch
 ```
 
 ## Configuration
