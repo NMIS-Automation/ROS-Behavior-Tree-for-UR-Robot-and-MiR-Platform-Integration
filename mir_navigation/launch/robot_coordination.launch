@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<launch>
+  <!-- Launch UR Robot Node -->
+  <node name="ur_robot_node" pkg="mir_navigation" type="ur_robot_node.py" output="screen">
+    <param name="ur_ip_address" value="10.1.1.1" />
+  </node>
+
+  <!-- Launch Robotiq Gripper Node -->
+  <node name="robotiq_gripper_node" pkg="mir_navigation" type="robotiq_gripper_node.py" output="screen">
+    <param name="gripper_ip" value="10.1.1.1" />
+    <param name="gripper_port" value="63352" />
+  </node>
+
+  <!-- Launch MiR Platform Node -->
+  <node name="mir_platform_node" pkg="mir_navigation" type="mir_platform_node.py" output="screen" />
+
+  <!-- Launch Behavior Tree Node -->
+  <node name="behavior_tree_node" pkg="mir_navigation" type="behavior_tree_node.py" output="screen" />
+
+  <!-- Launch main node to start the behavior tree -->
+  <node name="bt_main_node" pkg="mir_navigation" type="BT_main.py" output="screen" />
+</launch>
